@@ -1,0 +1,90 @@
+/* ===========================================================
+   ISLA SIQUIJOR | CIARA'S SIMPLE DESIGN
+   Edit colors, font sizes, and spacing in this file.
+   The original style.css provides the grid and responsive layout.
+   =========================================================== */
+
+/* 1. WEBSITE COLORS */
+:root {
+  --ink: #213e38;
+  --deep: #1c554b;
+  --teal: #267467;
+  --mint: #eff7f2;
+  --sand: #f8f7f1;
+  --paper: #ffffff;
+  --gold: #e6b76f;
+  --line: #e3e9e5;
+  --muted: #5d6d67;
+  --radius: 8px;
+  --max: 1100px;
+}
+
+/* 2. BASIC TEXT */
+body { background: white; font-family: Arial, Helvetica, sans-serif; line-height: 1.6; }
+h1, h2 { font-family: Georgia, 'Times New Roman', serif; letter-spacing: -.025em; }
+h2 { font-size: clamp(1.9rem, 3.7vw, 2.8rem); }
+h3 { font-size: 1.1rem; }
+.section { padding-block: 66px; }
+.eyebrow { letter-spacing: .12em; color: #957142; }
+
+/* 3. MENU */
+.topbar { padding: 5px 12px; background: #1c554b; letter-spacing: .035em; text-transform: none; }
+.site-header { background: #fff; backdrop-filter: none; }
+.nav-wrap { min-height: 72px; }
+.brand-mark { border: 0; font-size: 30px; }
+.site-nav { gap: 14px; }
+.site-nav a { font-size: 12px; font-weight: 600; }
+.site-nav a:hover, .site-nav a.active { color: #1a7564; }
+.site-nav a.active::after { background: #1a7564; }
+.site-nav a:not(.active):after { display: none; }
+
+/* 4. BUTTONS */
+.btn { border-radius: 6px; padding: 12px 20px; box-shadow: none; }
+.btn-primary { background: #1c554b; }
+.btn:hover { transform: translateY(-1px); }
+
+/* 5. HOMEPAGE BANNER - only a subtle slideshow animation */
+.home-hero { min-height: 560px; }
+.hero-content { padding-top: 66px; padding-bottom: 56px; animation: none; }
+.home-hero h1 { font-size: clamp(3rem, 7vw, 5.5rem); }
+.home-hero p { font-size: 16px; }
+.hero-shade { background: linear-gradient(90deg, rgba(9,48,43,.82), rgba(9,48,43,.18)); }
+.hero-pill { border-radius: 5px; background: rgba(255,255,255,.15); }
+.hero-bottom { margin-top: 48px; }
+.hero-slider .hero-slide { transform: none; transition: opacity .7s ease; }
+.hero-slider .hero-slide.is-current { transform: none; }
+
+/* 6. SIMPLE DESTINATION, HOTEL, AND PACKAGE CARDS */
+.card, .hotel-card, .place-card, .step-card, .package-detail, .form-card {
+  border-radius: 8px;
+  box-shadow: 0 3px 13px rgba(20,54,45,.08);
+  border: 1px solid var(--line);
+}
+.card:hover, .hotel-card:hover, .place-card:hover, .step-card:hover { transform: translateY(-2px); }
+.card img, .hotel-card img, .place-card img { transition: none; }
+.card-media img { transition: none; }
+.feature-photo, .feature-photo img { border-radius: 8px; }
+.mini-tour, .gallery-item { border-radius: 8px; }
+.package-detail:hover .package-banner img { transform: none; }
+
+/* 7. COLORED SECTIONS */
+.sand { background: #f8f7f1; }
+.sea { background: #eef6f1; }
+.cta-band { border-radius: 8px; }
+.footer { background: #1c554b; padding-top: 46px; }
+.footer-bottom { align-items: center; font-size: 12px; }
+
+/* 8. ACCESSIBILITY AND MOBILE */
+.reveal-ready, .reveal-ready.is-visible { opacity: 1; transform: none; transition: none; }
+@media (max-width: 850px) {
+  .site-nav { gap: 0; }
+  .site-nav a { font-size: 14px; }
+}
+@media (max-width: 600px) {
+  .container { width: calc(100% - 32px); }
+  .section { padding-block: 46px; }
+  .home-hero { min-height: 560px; }
+  .hero-bottom { margin-top: 48px; }
+  .card-grid, .hotel-grid, .mini-grid, .guide-grid { gap: 16px; }
+  .footer-bottom span { display: block; margin-bottom: 8px; }
+}

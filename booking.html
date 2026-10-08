@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#103d39" name="theme-color"/>
+  <meta content="Prepare a Siquijor tour inquiry with a privacy-conscious form and sample itinerary selection." name="description"/>
+  <title>
+   Book / Inquire | Isla Siquijor
+  </title>
+  <link href="https://commons.wikimedia.org" rel="preconnect"/>
+  <link href="assets/style.css" rel="stylesheet"/>
+  <script defer="" src="assets/script.js">
+  </script>
+  <link href="assets/simple-style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <div class="topbar">
+   <span>
+    ✦ Discover &bull; Explore &bull; Respect
+   </span>
+  </div>
+  <!-- NAVIGATION BAR -->
+  <header class="site-header">
+   <div class="container nav-wrap">
+    <a aria-label="Isla Siquijor &mdash; Home" class="brand" href="index.html">
+     <span class="brand-mark">
+      ✺
+     </span>
+     <span>
+      <strong>
+       ISLA SIQUIJOR
+      </strong>
+      <small>
+       THE MYSTIC ISLAND GUIDE
+      </small>
+     </span>
+    </a>
+    <button aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle">
+     <span>
+     </span>
+     <span>
+     </span>
+     <span>
+     </span>
+    </button>
+    <nav aria-label="Main navigation" class="site-nav" id="site-nav">
+     <a class="" href="index.html">
+      Home
+     </a>
+     <a class="" href="about.html">
+      About
+     </a>
+     <a class="" href="destinations.html">
+      Destinations
+     </a>
+     <a class="" href="packages.html">
+      Tour Packages
+     </a>
+     <a class="" href="gallery.html">
+      Gallery
+     </a>
+     <a class="" href="travel-guide.html">
+      Travel Guide
+     </a>
+     <a aria-current="page" class="active" href="booking.html">
+      Book / Inquire
+     </a>
+     <a class="" href="contact.html">
+      Contact
+     </a>
+    </nav>
+   </div>
+  </header>
+  <!-- MAIN PAGE CONTENT -->
+  <main id="main">
+   <section class="page-hero">
+    <div class="container narrow">
+     <div class="eyebrow">
+      06 / START PLANNING
+     </div>
+     <h1>
+      Let&rsquo;s plan your
+      <em>
+       island escape.
+      </em>
+     </h1>
+     <p>
+      Tell us about your trip and prepare an inquiry you can email to your chosen local tour or accommodation provider.
+     </p>
+    </div>
+   </section>
+   <section class="section container booking-layout">
+    <div>
+     <div class="eyebrow">
+      INQUIRY REQUEST
+     </div>
+     <h2>
+      A thoughtful trip starts here.
+     </h2>
+     <p class="body-copy">
+      Complete the form to create a prewritten email. Nothing is stored or submitted to a server. You can review your message before sending.
+     </p>
+     <div class="help-lines">
+      <p>
+       &checkmark; No payment information requested
+      </p>
+      <p>
+       &checkmark; No private information saved
+      </p>
+      <p>
+       &checkmark; Review before sending
+      </p>
+     </div>
+    </div>
+    <div class="form-card">
+     <h3>
+      Tell us about your trip
+     </h3>
+     <p>
+      Fields marked * are required.
+     </p>
+     <form class="inquiry-form" id="inquiry-form">
+      <div class="form-row">
+       <label>
+        Full name
+        <span>
+         *
+        </span>
+        <input autocomplete="name" id="guest-name" maxlength="90" minlength="2" name="name" placeholder="Your name" required="" type="text"/>
+       </label>
+       <label>
+        Email address
+        <span>
+         *
+        </span>
+        <input autocomplete="email" maxlength="120" name="email" placeholder="you@example.com" required="" type="email"/>
+       </label>
+      </div>
+      <div class="form-row">
+       <label>
+        Interested in
+        <span>
+         *
+        </span>
+        <select id="interest" name="interest" required="">
+         <option value="">
+          Select an itinerary or experience
+         </option>
+         <option>
+          The Island Classics
+         </option>
+         <option>
+          Coast &amp; Sunset
+         </option>
+         <option>
+          The Siquijor Escape
+         </option>
+         <option>
+          Cambugahay Falls
+         </option>
+         <option>
+          Paliton Beach
+         </option>
+         <option>
+          Salagdoong Beach
+         </option>
+         <option>
+          Lazi Church
+         </option>
+         <option>
+          Lazi Convent
+         </option>
+         <option>
+          Lugnason Falls
+         </option>
+         <option>
+          Old Enchanted Balete Tree
+         </option>
+         <option>
+          Tubod Marine Sanctuary
+         </option>
+         <option>
+          Cantabon Cave
+         </option>
+         <option>
+          Mt. Bandilaan
+         </option>
+         <option>
+          General travel question
+         </option>
+        </select>
+       </label>
+       <label>
+        Preferred travel date
+        <input id="trip-date" name="date" type="date"/>
+       </label>
+      </div>
+      <div class="form-row">
+       <label>
+        Travelers
+        <input max="30" min="1" name="travelers" type="number" value="2"/>
+       </label>
+       <label>
+        Approximate budget (optional)
+        <select name="budget">
+         <option value="">
+          Not sure yet
+         </option>
+         <option>
+          Below ₱2,000
+         </option>
+         <option>
+          ₱2,000&ndash;₱5,000
+         </option>
+         <option>
+          ₱5,000&ndash;₱10,000
+         </option>
+         <option>
+          ₱10,000+
+         </option>
+        </select>
+       </label>
+      </div>
+      <label>
+       Your message
+       <span>
+        *
+       </span>
+       <textarea maxlength="1500" minlength="10" name="message" placeholder="Tell us which places you're interested in, preferred dates, and any questions." required="" rows="6"></textarea>
+      </label>
+      <label class="consent">
+       <input required="" type="checkbox"/>
+       <span>
+        I understand this form prepares a travel inquiry and does not automatically confirm a reservation or process payment.
+       </span>
+      </label>
+      <button class="btn btn-primary" type="submit">
+       Prepare email inquiry &nearrow;
+      </button>
+      <button class="btn btn-outline" id="copy-inquiry" type="button">
+       Copy inquiry text
+      </button>
+      <div aria-live="polite" class="form-message" id="form-message" role="status">
+      </div>
+     </form>
+    </div>
+   </section>
+   <section class="section sand">
+    <div class="container">
+     <div class="section-head">
+      <div>
+       <div class="eyebrow">
+        HOW IT WORKS
+       </div>
+       <h2>
+        Simple, transparent, and easy.
+       </h2>
+      </div>
+     </div>
+     <div class="three-columns">
+      <div class="step-card">
+       <span>
+        01
+       </span>
+       <h3>
+        Choose your interest
+       </h3>
+       <p>
+        Select a sample itinerary or an attraction you'd like to ask about.
+       </p>
+      </div>
+      <div class="step-card">
+       <span>
+        02
+       </span>
+       <h3>
+        Prepare your message
+       </h3>
+       <p>
+        Share your preferred date, group size, and any questions.
+       </p>
+      </div>
+      <div class="step-card">
+       <span>
+        03
+       </span>
+       <h3>
+        Confirm with providers
+       </h3>
+       <p>
+        Use the email draft or copied text to contact your chosen real local provider directly.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+  </main>
+  <!-- FOOTER / COPYRIGHT -->
+  <footer class="footer">
+   <div class="container footer-grid">
+    <div>
+     <a class="brand brand-footer" href="index.html">
+      <span class="brand-mark">
+       ✺
+      </span>
+      <span>
+       <strong>
+        ISLA SIQUIJOR
+       </strong>
+       <small>
+        THE MYSTIC ISLAND GUIDE
+       </small>
+      </span>
+     </a>
+     <p>
+      A thoughtfully curated travel guide celebrating Siquijor's landscapes, people, culture, and island experiences.
+     </p>
+    </div>
+    <div>
+     <h3>
+      Explore
+     </h3>
+     <a href="destinations.html">
+      Destinations
+     </a>
+     <a href="packages.html">
+      Sample itineraries
+     </a>
+     <a href="gallery.html">
+      Photo gallery
+     </a>
+     <a href="travel-guide.html">
+      Travel guide
+     </a>
+    </div>
+    <div>
+     <h3>
+      Plan
+     </h3>
+     <a href="booking.html">
+      Send an inquiry
+     </a>
+     <a href="contact.html">
+      Contact
+     </a>
+     <a href="travel-guide.html#transport">
+      Getting there
+     </a>
+     <a href="credits.html">
+      Photo credits &amp; disclaimer
+     </a>
+    </div>
+    <div>
+     <h3>
+      Stay connected
+     </h3>
+     <p>
+      📍 Siquijor Island, Philippines
+     </p>
+    <p>
+     ✉
+         <a 
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=ciaragasic@gmail.com"
+         target="_blank"
+         rel="noopener noreferrer"
+         >
+             ciaragasic@gmail.com
+          </a>
+    </p>
+     <p class="micro">
+      Plan responsibly and confirm current rates, schedules, rules, and availability directly with local providers.
+     </p>
+    </div>
+   </div>
+   <div class="container footer-bottom">
+    <span>
+     &copy; 2026 Isla Siquijor | All Rights Reserved by Ciara
+    </span>
+   </div>
+  </footer>
+  <button aria-label="Back to top" class="to-top">
+   &uarr;
+  </button>
+ </body>
+</html>
